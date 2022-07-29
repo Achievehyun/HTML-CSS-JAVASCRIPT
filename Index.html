@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>매일경제</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        margin-left: 0px;
+    }
+    #top-view {
+        background-color: #efefee;
+        height: 30px;
+        color: #666666;
+        font-size: 12px;
+    }
+    #top-view > nav {
+        margin-left: auto;
+        margin-right: auto;
+        width: 980px;
+        /* background-color: blueviolet; */
+    }
+    #top-view ul {
+        padding-left: 0px;
+        padding-top:  6px;
+        margin: 0px;
+    }
+    #top-view ul li {
+        display:inline-block;
+        margin-left: 7px;
+    }
+    #top-view ul li:not(:first-child) {
+        margin-left: 7px;
+    }
+    #top-view ul:first-child {
+        float: right
+    }
+    #top-view ul:first-child li:after {
+        content: '|';
+    }
+    #top-view ul:first-child li:last-child {
+        content: ''; 
+    }
+    #container {
+        width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin:0px auto; */
+        height: 1500px;
+        background: cadetblue;
+    }
+
+    #header {
+        height: 150px;
+        background-color: coral;
+    }
+    #main-title-box {
+        background-color: blueviolet;
+        height: 110px;
+    }
+    #main-title-box .logo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .main-title-box .weather-guide {
+        background: red;
+        height: 50px;
+        width: 200px;
+        position:absolute;
+        top: 30px;
+        left: 10px;
+    } 
+    .weather-guide{
+        background: red; height: 50px; width: 150px; position: absolute; top: 30px; left: 50px;
+    }
+    .weather-guide > div {
+        display: inline-block
+    }
+    .weather-guide > div span {
+        font-size: 12px;
+    }
+    .top-menu {
+        height: 40px;
+        /* background-color: brown; */
+        border-top: 2px black solid;
+        border-bottom: 1px black solid;
+    }
+    #right-content {
+        float: right;
+        width: 40%;
+        height: 400px;
+        background-color: blue;
+    }
+    #main-content {
+        width: calc(100% = 38%);
+        height: 390px;
+        background-color: yellow;
+    }
+    @media (max-device-width: 50px) {
+        #right-content {
+            float: initial;
+        }
+    }
+
+
+</style>
+<body>
+    <div id="top-view">
+        <nav>
+            <ul>
+                <li>ENGLISH</li>
+                <li>中國語</li>
+                <li>日本語</li>
+                <li>신문PDF</li>
+                <li>구독신청</li>
+                <li>로그인</li>
+                <li>회원가입</li>
+            </ul>
+            <ul>
+                <li>매일경제</li>
+                <li>MBN</li>
+                <li>매일경제TV</li>
+                <li>매경ECONOMY</li>
+                <li>매일LUXMEN</li>
+                <li>CITYLIFE</li>
+                <li>GFW</li>
+                <li>M-PRINT</li>
+                <li>매경출판</li>
+            </ul>
+            
+       </nav>
+    </div>
+    <div id="container">
+        <div id="header">
+            <div id="main-title-box" style="position: relative;">
+                <div class="weather-guide">
+                    <div><img src="image/imgee.png"></div>
+                    <div><span>2022.7.29(금)</span><span>33.1C</span><span>울산</span></div>
+                </div>
+                
+                <img class="logo" src="image\l_mk.gif">
+            </div>
+            <div class="top-menu">
+                
+            </div>
+    
+        </div>
+        <div id="main-view">
+            <div id="right-content"></div>
+            <div id="main-content"></div>
+    
+        </div>
+    </div>
+    
+    
+
+    
+</body>
+</html>
